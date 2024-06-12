@@ -21,6 +21,5 @@ Installers:
   UpgradeBehavior: install
   AppsAndFeaturesEntries:
   - DisplayName: MSI Afterburner 4.6.5
-    DisplayVersion: 4.6.5
 ManifestType: installer
 ManifestVersion: 1.4.0

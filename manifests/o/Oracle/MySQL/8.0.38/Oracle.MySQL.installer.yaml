@@ -21,9 +21,7 @@ Dependencies:
 ProductCode: '{B5FFCC0C-8645-4937-8290-6E4BEF3A25BB}'
 ReleaseDate: 2024-06-18
 AppsAndFeaturesEntries:
-- DisplayName: MySQL Installer
-  DisplayVersion: 1.6.11.0
-  UpgradeCode: '{18B94B70-06F1-4AC0-B308-37280DB868C2}'
+- UpgradeCode: '{18B94B70-06F1-4AC0-B308-37280DB868C2}'
 Installers:
 - Architecture: x86
   InstallerUrl: https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-8.0.38.0.msi

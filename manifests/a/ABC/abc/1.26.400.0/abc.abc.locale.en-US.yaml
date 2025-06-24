@@ -1,0 +1,21 @@
+# Created using wingetcreate 1.9.0.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.9.0.schema.json
+
+PackageIdentifier: abc.abc
+PackageVersion: 1.26.400.0
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PublisherUrl: https://github.com/microsoft
+PublisherSupportUrl: https://github.com/microsoft/winget-cli/issues
+PackageName: ms-resource:appDisplayName
+PackageUrl: https://github.com/microsoft/winget-cli
+License: MIT
+ShortDescription: ms-resource:appDescription
+Tags:
+- command-line
+- package-manager
+- windows
+- winget
+ReleaseNotesUrl: https://github.com/microsoft/winget-cli/releases/tag/v1.11.400
+ManifestType: defaultLocale
+ManifestVersion: 1.9.0

@@ -376,6 +376,8 @@ configuration:
           - removeLabel:
               label: Validation-Forbidden-URL-Error
           - removeLabel:
+              label: Validation-Guide
+          - removeLabel:
               label: Validation-Hash-Verification-Failed
           - removeLabel:
               label: Validation-Installation-Error
@@ -554,6 +556,8 @@ configuration:
               label: Validation-Executable-Error
           - removeLabel:
               label: Validation-Forbidden-URL-Error
+          - removeLabel:
+              label: Validation-Guide
           - removeLabel:
               label: Validation-Hash-Verification-Failed
           - removeLabel:

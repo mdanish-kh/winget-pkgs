@@ -489,6 +489,18 @@ $ Enable-WindowsOptionalFeature -Online -FeatureName 'Containers-DisposableClien
     Invoke-CleanExit -ExitCode -1
 }
 
+# Check if the Container Manager Service is running
+$containerManagerService = Get-Service -Name 'CmService' -ErrorAction SilentlyContinue
+if (!$containerManagerService -or $containerManagerService.Status -ne 'Running') {
+    Write-Error -ErrorAction Continue -Category ResourceUnavailable -Message @'
+The Container Manager Service (CmService) is not running. Windows Sandbox cannot start without it.
+
+You can run the following command in an elevated PowerShell to start the service:
+$ Start-Service -Name 'CmService'
+'@
+    Invoke-CleanExit -ExitCode -1
+}
+
 # Validate the provided manifest
 if (!$SkipManifestValidation -and ![String]::IsNullOrWhiteSpace($Manifest)) {
     # Check that WinGet is Installed
